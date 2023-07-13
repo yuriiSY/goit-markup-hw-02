@@ -1,7 +1,17 @@
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--navyblue, #2E2F42);
+    color: #434455;
     background-color: #FFF;
+}
+
+:root {
+    --iris: #4D5AE5;
+    --navyblue: #2E2F42;
+    --ocean: #404BBF;
+    --white: #FFF;
+    --slate: #434455;
+    --cloud: #F4F4FD;
+    --cornflower: #E7E9FC;
 }
 
 .link {
@@ -13,27 +23,32 @@ body {
 }
 
 .header-logo-color {
-    color: var(--iris, #4D5AE5);
+    color: var(--iris);
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 800;
-    line-height: 1.16;/* 116.667% */
+    line-height: 1.17;/* 116.667% */
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
 .header-logo {
-    color: var(--navyblue, #2E2F42);
-    font-family: Raleway;
+    color: var(--navyblue);
+    font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 800;
-    line-height: 1.16;/* 116.667% */
+    line-height: 1.17;/* 116.667% */
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
+.header-menu-item:hover,
+.header-menu-item:focus {
+    color: var(--ocean);
+}
+
 .header-menu-link {
-    color: var(--navyblue, #2E2F42);   
+    color: var(--navyblue);   
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;/* 150% */
@@ -50,17 +65,21 @@ body {
 
 .header-contacts-link:hover,
 .header-contacts-link:focus {
-    color: var(--ocean, #404BBF);
+    color: var(--ocean);
+}
+
+.address {
+    font-style: normal;
 }
 
 /*HERO*/
 
 .hero {
-    background-color: var(--navyblue, #2E2F42);
+    background-color: var(--navyblue);
 }
 
 .hero-title {
-    color: var(--white, #FFF);
+    color: var(--white);
     text-align: center;
     font-size: 56px;
     font-weight: 700;
@@ -69,10 +88,8 @@ body {
 }
 
 .hero-order-btn {
-    border-radius: 4px;
-    background-color: var(--iris, #4D5AE5);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    color: var(--white, #FFF);
+    background-color: var(--iris);
+    color: var(--white);
     font-family: inherit;
     font-size: 16px;
     font-weight: 500;
@@ -81,13 +98,13 @@ body {
     cursor: pointer;
 }
 .hero-order-btn:hover, .hero-order-btn:focus { 
-    background-color: var(--ocean, #404BBF);
+    background-color: var(--ocean);
 }
 
 /*ADVANTEGES*/
 
 .advanteges-item-subtitle {
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;/* 120% */
@@ -95,7 +112,7 @@ body {
 }
 
 .advanteges-item-description {
-    color: var(--slate, #434455);
+    color: var(--slate);
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;/* 150% */
@@ -105,7 +122,7 @@ body {
 /*WORKS*/
 
 .works-title {
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
     text-align: center;
     font-size: 36px;
     font-weight: 700;
@@ -117,11 +134,11 @@ body {
 /*TEAM*/
 
 .team {
-    background-color: var(--cloud, #F4F4FD);
+    background-color: var(--cloud);
 }
 
 .team-title {
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
     text-align: center;   
     font-size: 36px;
     font-weight: 700;
@@ -131,13 +148,11 @@ body {
 }
 
 .team-list-item {
-    border-radius: 0px 0px 4px 4px;
-    background: var(--white, #FFF);
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    background: var(--white);
 }
 
 .team-item-name {
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
     text-align: center;
     font-size: 20px;
     font-weight: 500;
@@ -146,7 +161,7 @@ body {
 }
 
 .team-item-occupation {
-    color: var(--slate, #434455);
+    color: var(--slate);
     text-align: center;
     font-size: 16px;
     font-weight: 400;
@@ -157,15 +172,14 @@ body {
 /*PORTFOLIO*/
 
 .portfolio-work-item {
-    border: 1px solid var(--cornflower, #E7E9FC);
-    background: var(--white, #FFF);
+    border: 1px solid var(--cornflower);
+    background: var(--white);
 }
 
 .portfolio-options-btn {
-    border-radius: 4px;
-    border: 1px solid var(--cornflower, #E7E9FC);
+    border: 1px solid var(--cornflower);
     background: var(--cloud, #F4F4FD);
-    color: var(--iris, #4D5AE5);
+    color: var(--iris);
     text-align: center;
     font-size: 16px;
     font-style: normal;
@@ -176,7 +190,7 @@ body {
 }
 
 .portfolio-work-name {
-    color: var(--navyblue, #2E2F42);
+    color: var(--navyblue);
     font-size: 20px;
     font-weight: 500;
     line-height: 1.2;/* 120% */
@@ -184,7 +198,7 @@ body {
 }
 
 .portfolio-work-description {
-    color: var(--slate, #434455);
+    color: var(--slate);
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
@@ -196,11 +210,11 @@ body {
 /*FOOTER*/
 
 .footer {
-    background: var(--navyblue, #2E2F42);
+    background: var(--navyblue);
 }
 
 .footer-logo-color {
-    color: var(--iris, #4D5AE5);
+    color: var(--iris);
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 800;
@@ -210,17 +224,17 @@ body {
 }
 
 .footer-logo {
-    color: var(--cloud, #F4F4FD);
+    color: var(--cloud);
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
     font-weight: 800;
-    line-height: 1.16;/* 116.667% */
+    line-height: 1.17;/* 116.667% */
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
 .footer-description {
-    color: var(--cloud, #F4F4FD);
+    color: var(--cloud);
     font-size: 16px;
     font-weight: 400;
     line-height: 1.5;/* 150% */
