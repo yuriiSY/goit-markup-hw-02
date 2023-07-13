@@ -4,6 +4,10 @@ body {
     background-color: #FFF;
 }
 
+address {
+    font-style: normal;
+}
+
 :root {
     --iris: #4D5AE5;
     --navyblue: #2E2F42;
@@ -22,7 +26,7 @@ body {
     list-style-type: none;
 }
 
-.header-logo-color {
+.header-logo {
     color: var(--iris);
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -32,7 +36,7 @@ body {
     text-transform: uppercase;
 }
 
-.header-logo {
+.header-logo-simple {
     color: var(--navyblue);
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -42,8 +46,8 @@ body {
     text-transform: uppercase;
 }
 
-.header-menu-item:hover,
-.header-menu-item:focus {
+.header-menu-link:hover,
+.header-menu-link:focus {
     color: var(--ocean);
 }
 
@@ -68,9 +72,6 @@ body {
     color: var(--ocean);
 }
 
-.address {
-    font-style: normal;
-}
 
 /*HERO*/
 
@@ -94,7 +95,7 @@ body {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;/* 150% */
-    letter-spacing: 0.04px;
+    letter-spacing: 0.04em;
     cursor: pointer;
 }
 .hero-order-btn:hover, .hero-order-btn:focus { 
@@ -180,6 +181,7 @@ body {
     border: 1px solid var(--cornflower);
     background: var(--cloud, #F4F4FD);
     color: var(--iris);
+    font-family: inherit;
     text-align: center;
     font-size: 16px;
     font-style: normal;
@@ -199,7 +201,6 @@ body {
 
 .portfolio-work-description {
     color: var(--slate);
-    font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
